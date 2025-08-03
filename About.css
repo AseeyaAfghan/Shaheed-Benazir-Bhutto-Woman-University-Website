@@ -1,0 +1,180 @@
+@font-face {
+    font-family: "poppins";
+    src: url(images/Poppins-Regular.ttf);
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "poppins";
+
+}
+
+body{
+    text-align: center;
+}
+#nav-bar{
+    height: 80px;
+    width: 100%;
+    background-color: black;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+#nav-bar img{
+    height: 65px;
+    width: 120px;
+    padding-left: 30px;
+}
+
+
+#nav-bar  a{
+    text-decoration: none;
+    color: white;
+    margin-right: 20px;
+}
+
+#nav-bar a:hover{
+    background-color: transparent;
+    border-bottom: 3px solid red;
+    transition: 0.5s ease-in;
+}
+
+
+#about{
+    height: 50vh;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(images/background.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: rgb(255, 255, 255);
+    text-align: center;
+}
+
+
+#about h1{
+    font-size: 2rem;
+    padding-top: 100px;
+}
+
+
+#paragraph{
+   margin: auto;
+   margin-top: 70px;
+   display: flex;
+   justify-content:  center;
+   align-items: center;
+   flex-wrap: wrap;
+   text-align: left;
+   gap: 40px;
+}
+
+.para{
+   height: 450px;
+   width: 700px;
+   margin-bottom: 100px;
+}
+
+
+.para h1{
+  margin-left: 20px;
+}
+
+.para p{
+  margin-top: 20px;
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+.para button{
+  height: 30px ;
+  width: 120px;
+  margin-left:20px ;
+  margin-top: 20px;
+  border: 1px solid red;
+  color: red;
+  background-color: transparent;
+}
+
+.para img{
+  height: 450px;
+  width: 700px;
+  border-radius: 5px;
+}
+
+#about-para{
+    padding-bottom: 50px;
+}
+
+footer{
+    height: 70px;
+    width: 100%;
+    background-color: rgb(26, 25, 25);
+    margin-top: 50px;
+    color: white;
+    padding-top: 10px;
+}    
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* ---------------------------------Media Queries-------------------------------------------------------- */
+@media(max-width:700px){
+    #nav-bar{
+        display: flex;
+        height: 40px;
+        width: 100vw;
+        justify-content: space-between;
+    }
+
+    #nav-bar img{
+        height: 30px;
+        width: 55px;
+        padding-left: 5px;
+    }
+
+    #nav-bar {
+       font-size: 0.7rem;
+    }
+
+    #nav-bar  a{
+        margin-right: 10px;
+    }
+          
+
+  #extra-para{
+   height: 700px;
+   width: 95%;
+   margin-bottom: 100px;
+  }
+   
+  #img-para{
+    height: 270px;
+    width: 92%;
+    margin-left: 20px;
+  }
+
+   
+   #img-para img{
+    height: 250px;
+    width: 310px;
+    margin-left: 10px;
+    margin-top: 50px;
+  }
+
+   
+
+}
+    
